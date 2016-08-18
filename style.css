@@ -1,0 +1,51 @@
+body {
+	padding: 20px;
+}
+
+.page-left,
+.page-right {
+	height: 600px;
+}
+
+#chapter-contents {
+	height: 420px;
+	overflow-y: scroll;
+	padding: 10px;
+	border-radius: 2px;
+	transition: box-shadow .2s ease-in;
+}
+
+#chapter-contents.loaded.down {
+	box-shadow: -3px -3px 10px 0px #e0e0e0 inset;
+}
+
+#chapter-contents.loaded.up {
+	box-shadow: 3px 3px 10px 0px #e0e0e0 inset;
+}
+
+#chapter-contents h6 {
+	font-weight: bold;
+}
+
+#chapter-titles {
+	margin-top: 50px;
+}
+
+#btn-load-wrapper {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.collection-item .preloader-wrapper {
+	float: right;
+	width: 26;
+	height: 26;
+}
+
+.collection-item.error {
+	background: transparent !important;
+}
